@@ -1,0 +1,22 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#header-image {
+    background-image: url('hotel-outside.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+#header-title {
+    font-family: 'Single Day', cursive;
+    letter-spacing: -1px;
+}
+
+.card-image {
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    height: 200px;
+}
