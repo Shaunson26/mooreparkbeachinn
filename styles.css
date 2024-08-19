@@ -1,3 +1,5 @@
+/* https://colorpalettes.net/color-palette-373/*/
+
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Gloria+Hallelujah&display=swap');
 
 .gloria-hallelujah-regular {
@@ -41,8 +43,17 @@ html {
 }
 
 .my-beach-cream {
-  background-color: #f0df99;
+  background-color: #f0df99 !important;
   background-color: rgba(240, 223, 153, 0.25);
+}
+
+.my-beach-cream-25 {
+  background-color: #f0df9940 !important;
+  background-color: rgba(240, 223, 153, 0.25);
+}
+
+.my-border-beach-orange {
+  border: 1px solid  #d38e31 ;
 }
 
 .my-hover-beach-blue:hover {
@@ -55,6 +66,11 @@ html {
   color: white !important;
 }
 
+.my-hover-border-beach-orange:hover {
+  border: 1px solid #d38e31 !important;
+  color: white !important;
+}
+
 .my-flex-middle {
   height: 100%;
   display: flex;
@@ -62,11 +78,11 @@ html {
   justify-content: center;
 }
 
-#myNavbar>a>i {
+#navbar>a>i {
   padding-right: 4px;
 }
 
-/*#myNavbar{
+/*#navbar{
   height: 60px;
   clip-path: polygon(
     0 0,
