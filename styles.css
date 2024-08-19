@@ -27,7 +27,7 @@ html {
 }
 
 .rwimg-1 {
-  background-image: url('/images/motel-hero.jpeg');
+  background-image: url('./images/motel-hero.jpeg');
   min-height: 250px;
 }
 
@@ -48,19 +48,19 @@ html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('/images/motel-hero.jpeg');
+  background-image: url('./images/motel-hero.jpeg');
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("/images/beach-2.jpeg");
+  background-image: url("./images/beach-2.jpeg");
   min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("/images/hotel-front.jpeg");
+  background-image: url("./images/hotel-front.jpeg");
   min-height: 400px;
 }
 
