@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Gloria+Hallelujah&display=swap');
+
+.gloria-hallelujah-regular {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body,
 h1,
 h2,
@@ -16,22 +25,103 @@ html {
   text-align: justify;
 }
 
+.my-beach-blue {
+  background-color: #1a748e;
+  color: white;
+}
+
+.my-beach-blue-light {
+  background-color: #55c4d7;
+  color: white;
+}
+
+.my-beach-orange {
+  background-color: #d38e31;
+  color: white;
+}
+
+.my-beach-cream {
+  background-color: #f0df99;
+  background-color: rgba(240, 223, 153, 0.25);
+}
+
+.my-hover-beach-blue:hover {
+  background-color: #1a748e !important;
+  color: white !important;
+}
+
+.my-hover-beach-orange:hover {
+  background-color: #d38e31 !important;
+  color: white !important;
+}
+
+.my-flex-middle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#myNavbar>a>i {
+  padding-right: 4px;
+}
+
+/*#myNavbar{
+  height: 60px;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 1vw)
+  );
+}*/
+
+#home {
+  margin-top: 40px;
+}
+
+#my-title {
+  font-family: "Gloria Hallelujah", "Lato", sans-serif;
+  font-weight: bold;
+}
+
 .enjoy-text {
   text-align: left;
 }
 
-.contain-info {
+.inn-rows > div {
+  height: 300px;
+  overflow: hidden;
+}
+
+.contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+
+
+
+
+/* Images */
 .rwimg-1 {
-  background-image: url('./images/motel-hero.jpeg');
-  min-height: 250px;
+  background-image: url('./images/dogs.jpg');
 }
 
-.rwimg-1 {
+.rwimg-2 {
+  background-image: url('./images/sunset.jpeg');
+}
+
+.rwimg-3 {
+  background-image: url('./images/rooms.jpg');
+}
+
+.rwimg-1,
+.rwimg-2,
+.rwimg-3 {
+  min-height: 250px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -60,7 +150,7 @@ html {
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("./images/hotel-front.jpeg");
+  background-image: url("./images/beach.jpeg");
   min-height: 400px;
 }
 
@@ -72,7 +162,16 @@ html {
   cursor: pointer;
 }
 
+
+
 /* Turn off parallax scrolling for tablets and phones */
+@media only screen and (min-device-width: 992px) {
+
+  #footer-bottom {
+    height: 150px;
+  }
+}
+
 @media only screen and (max-device-width: 1600px) {
 
   .bgimg-1,
@@ -81,4 +180,5 @@ html {
     background-attachment: scroll;
     min-height: 400px;
   }
+
 }
