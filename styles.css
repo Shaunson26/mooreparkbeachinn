@@ -53,7 +53,7 @@ html {
 }
 
 .my-border-beach-orange {
-  border: 1px solid  #d38e31 ;
+  border: 1px solid #d38e31;
 }
 
 .my-hover-beach-blue:hover {
@@ -105,7 +105,7 @@ html {
   text-align: left;
 }
 
-.inn-rows > div {
+.inn-rows>div {
   height: 300px;
   overflow: hidden;
 }
@@ -198,3 +198,10 @@ html {
   }*/
 
 }
+
+/*#TA_cdsratingsonlywide602 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}*/
