@@ -1,0 +1,82 @@
+/* https://colorpalettes.net/color-palette-373/*/
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Gloria+Hallelujah&display=swap');
+
+.gloria-hallelujah-regular {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.my-beach-blue {
+  background-color: #1a748e;
+  background-color: #6BC2DD;
+  color: white;
+}
+
+.my-beach-blue-light {
+  background-color: #55c4d7;
+  color: white;
+}
+
+.my-beach-orange {
+  background-color: #d38e31;
+  background-color: #EAC47D;
+  color: white;
+}
+
+.my-beach-cream {
+  background-color: #f0df99 !important;
+  background-color: rgba(240, 223, 153, 0.25);
+}
+
+.my-beach-cream-25 {
+  background-color: #f0df9940 !important;
+  background-color: rgba(240, 223, 153, 0.25);
+}
+
+.my-border-beach-orange {
+  border: 1px solid #d38e31;
+  border:1px solid #EAC47D;
+}
+
+.my-hover-beach-blue:hover {
+  background-color: #1a748e !important;
+  background-color: #6BC2DD !important;
+  color: white !important;
+}
+
+.my-hover-beach-orange:hover {
+  background-color: #d38e31 !important;
+  background-color: #EAC47D !important;
+  color: white !important;
+}
+
+.my-hover-border-beach-orange:hover {
+  border: 1px solid #d38e31 !important;
+  border: 1px solid #EAC47D !important;
+  color: white !important;
+}
+
+.my-hover-bold:hover {
+  font-weight: bold;
+}

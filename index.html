@@ -7,7 +7,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="styles-colours-fonts.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-tripadvisor.css">
   <script src="w3.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -36,19 +38,19 @@
 
   <div w3-include-html="./components/navbar.html"></div>
   <div w3-include-html="./components/hero.html"></div>
-  <div class="w3-container w3-center w3-section" id="book" w3-include-html="./components/book-button.html"></div>
   <div w3-include-html="./components/welcome.html"></div>
   <div w3-include-html="./components/our-inn.html"></div>
   <div w3-include-html="./components/contact.html"></div>
   <div w3-include-html="./components/footer.html"></div>
 
-  <script async
-    src="https://www.jscache.com/wejs?wtype=cdsratingsonlywide&amp;uniq=602&amp;locationId=3171922&amp;lang=en_AU&amp;border=true&amp;display_version=2"
-    data-loadtrk onload="this.loadtrk=true"></script>
+  <script
+  src="https://www.jscache.com/wejs?wtype=cdsratingsonlywide&amp;uniq=602&amp;locationId=3171922&amp;lang=en_AU&amp;border=true&amp;display_version=2"
+  data-loadtrk onload="this.loadtrk=true"></script>
   
+
   <script>
 
-    w3.includeHTML(function(){});
+    w3.includeHTML(function () { });
 
     // Used to toggle the menu on small screens when clicking on the menu button
     function toggleFunction() {
@@ -58,8 +60,10 @@
       } else {
         x.className = x.className.replace(" w3-show", "");
       }
-    }
+    }    
   </script>
+
+  
 
 
 </body>

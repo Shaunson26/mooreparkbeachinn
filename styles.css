@@ -1,76 +1,3 @@
-/* https://colorpalettes.net/color-palette-373/*/
-
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Gloria+Hallelujah&display=swap');
-
-.gloria-hallelujah-regular {
-  font-family: "Gloria Hallelujah", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Lato", sans-serif;
-}
-
-body,
-html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-  text-align: justify;
-}
-
-.my-beach-blue {
-  background-color: #1a748e;
-  color: white;
-}
-
-.my-beach-blue-light {
-  background-color: #55c4d7;
-  color: white;
-}
-
-.my-beach-orange {
-  background-color: #d38e31;
-  color: white;
-}
-
-.my-beach-cream {
-  background-color: #f0df99 !important;
-  background-color: rgba(240, 223, 153, 0.25);
-}
-
-.my-beach-cream-25 {
-  background-color: #f0df9940 !important;
-  background-color: rgba(240, 223, 153, 0.25);
-}
-
-.my-border-beach-orange {
-  border: 1px solid #d38e31;
-}
-
-.my-hover-beach-blue:hover {
-  background-color: #1a748e !important;
-  color: white !important;
-}
-
-.my-hover-beach-orange:hover {
-  background-color: #d38e31 !important;
-  color: white !important;
-}
-
-.my-hover-border-beach-orange:hover {
-  border: 1px solid #d38e31 !important;
-  color: white !important;
-}
-
 .my-flex-middle {
   height: 100%;
   display: flex;
@@ -81,16 +8,6 @@ html {
 #navbar>a>i {
   padding-right: 4px;
 }
-
-/*#navbar{
-  height: 60px;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    0 calc(100% - 1vw)
-  );
-}*/
 
 #home {
   margin-top: 40px;
@@ -115,9 +32,6 @@ html {
   flex-direction: column;
   align-items: center;
 }
-
-
-
 
 
 /* Images */
@@ -153,10 +67,19 @@ html {
 }
 
 /* First image (Logo. Full height) */
-.bgimg-1 {
+/*.bgimg-1 {
   background-image: url('./images/motel-hero.jpeg');
   min-height: 600px;
+}*/
+
+.bgimg-1 {
+  background-image: url('./images/mpb-sign.jpeg');
+  min-height: 415px;
+  background-attachment: unset;
+  background-size: contain;
+  background-position: top;
 }
+
 
 /* Second image (Portfolio) */
 .bgimg-2 {
@@ -199,9 +122,3 @@ html {
 
 }
 
-/*#TA_cdsratingsonlywide602 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}*/
