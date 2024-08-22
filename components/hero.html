@@ -21,19 +21,31 @@
     <img src="./images/mpb-sign.jpeg" style="width:100%" class="w3-hide-small">
     <img src="./images/mpb-sign-small.jpg" style="width:100%" class="w3-hide-medium w3-hide-large">
 
-    <div>
-        <div style="padding: 2px;">
-            <div id="TA_cdsratingsonlywide602" class="TA_cdsratingsonlywide">
-                <a target="_blank"
-                    href="https://www.tripadvisor.com.au/Hotel_Review-g3561484-d3171922-Reviews-Moore_Park_Beach_Inn-Moore_Park_Beach_Bundaberg_Region_Queensland.html">
-                    <img src="https://www.tripadvisor.com.au/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-18034-2.svg"
-                        alt="TripAdvisor" style="height: 1px;" /></a>
-            </div>
-        </div>
+    <style>
+        .review {
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+        }
 
-        <div>
-            <!-- place for google review -->        
+        #review-right {
+            padding: 2px;
+        }
 
+        @media only screen and (min-width: 993px) {
+            #review-right {
+                justify-content: right;
+            }
+
+            #review-left {
+                justify-content: left;
+            }
+        }
+    </style>
+
+    <div class="w3-row" id="review-row">
+        <div w3-include-html="./components/tripadvisor-review.html" class="review w3-col l6 m12 s12" id="review-left"></div>
+        <div w3-include-html="./components/google-review.html" class="review w3-col l6 m12 s12" id="review-right">
         </div>
     </div>
 </div>

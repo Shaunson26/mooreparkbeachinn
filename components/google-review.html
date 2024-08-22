@@ -1,0 +1,85 @@
+<style>
+    #google-rating-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        background-color: white;
+        width: 100%;
+        max-width: 350px;
+        border: 1px solid black;
+    }
+
+    #google-logo {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3px;
+    }
+
+    #star-rating-value {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+    #star-rating {
+        position: relative;
+        display: inline-block;
+        font-size: 18px;
+        /* Adjust size as needed */
+        color: #ccc;
+        /* Color for empty stars */
+    }
+
+    .stars-filled {
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        color: #f5b301;
+        /* Color for filled stars */
+    }
+
+    .stars-empty {
+        color: #ccc;
+        /* Color for empty stars */
+    }
+
+    #star-rating-total-reviews {
+        font-size: 10px;
+        color: rgba(17, 17, 17, 0.5)
+    }
+</style>
+
+
+<div id="google-rating-container" class="w3-container">
+    <div id="google-logo">
+        <img src="./images/google-logo.svg" alt="" wdith="22px" height="22px">
+        <span class="w3-small">Google&nbsp;Reviews</span>
+    </div>
+
+    <div id="star-rating-value">X</div>
+
+    <div id="star-rating">
+        <div class="stars-filled">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+        <div class="stars-empty">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+    </div>
+
+    <div id="star-rating-total-reviews">
+        <a href="https://maps.google.com/?cid=6557914044585146535"><span id="star-rating-total-reviews-total">XXX</span> reviews</a>
+    </div>
+</div>
