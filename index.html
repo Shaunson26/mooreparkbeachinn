@@ -33,7 +33,7 @@
 
 </head>
 
-<body class="my-beach-cream-25" style="display: none;">
+<body class="my-beach-cream-25" style="visibility: hidden;">
 
   <div w3-include-html="./components/navbar.html"></div>
   <div w3-include-html="./components/hero.html"></div>
@@ -52,7 +52,7 @@
     w3.includeHTML(function () {
       updateGoogleReview()
       let body = document.getElementsByTagName('body')[0];
-      body.style.display = 'unset';
+      body.style.visibility = 'visible';
     });
   </script>
 
