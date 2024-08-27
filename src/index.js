@@ -1,5 +1,3 @@
-console.log('Hello world!');
-
 const componentImports = {
     navbar: () => import('bundle-text:./components/navbar.html'),
     hero: () => import('bundle-text:./components/hero.html'),
