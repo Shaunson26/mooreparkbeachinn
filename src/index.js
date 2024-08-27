@@ -7,6 +7,41 @@ const componentImports = {
     footer: () => import('bundle-text:./components/footer.html')
 };
 
+
+loadAndInjectComponents(Object.keys(componentImports), () => {
+    addNavbarToggleFunction()
+});
+
+updateGoogleReview()
+fadeInBody()
+
+/**
+ * Import bundled text using object of import calls. Object keys must match
+ * include-html ids.
+ * @param {*} components 
+ * @param {*} callback 
+ */
+async function loadAndInjectComponents(components, callback) {
+
+    function addElement(id, html) {
+        document.querySelector(`div[w3-include-html=${id}]`).innerHTML = html
+    }
+
+    async function loadAndAddComponents(components, callback) {
+        for (const component of components) {
+            const componentHTML = await loadComponent(component);
+            if (componentHTML) {
+                addElement(component, componentHTML);
+            }
+        }
+       
+        callback()
+    }
+
+    loadAndAddComponents(components, callback)
+
+}
+
 // Function to load a component dynamically
 async function loadComponent(componentName) {
     if (componentImports[componentName]) {
@@ -18,35 +53,24 @@ async function loadComponent(componentName) {
     }
 }
 
-// Example usage
-async function loadAndInjectComponents() {
 
-    function addElement(id, html) {
-        document.querySelector(`div[w3-include-html=${id}]`).innerHTML = html
-    }
+function fadeInBody() {
+    window.addEventListener('load', function () {
+        const content = document.getElementsByTagName('body')[0];
+        content.classList.add('fade-in');
+    });
+}
 
-    const navbarHTML = await loadComponent('navbar');
-    const heroHTML = await loadComponent('hero');
-    const welcomeHTML = await loadComponent('welcome');
-    const ourInnHTML = await loadComponent('our-inn');
-    const contactHTML = await loadComponent('contact');
-    const footerHTML = await loadComponent('footer');
-
-    if (navbarHTML) addElement('navbar', navbarHTML);
-    if (heroHTML) addElement('hero', heroHTML);
-    if (welcomeHTML) addElement('welcome', welcomeHTML);
-    if (ourInnHTML) addElement('our-inn', ourInnHTML);
-    if (contactHTML) addElement('contact', contactHTML);
-    if (footerHTML) addElement('footer', footerHTML);
+function addNavbarToggleFunction() {
 
     document.getElementById('toggle-nav-menu').onclick = toggleFunction
+
     const divChildren = document.querySelector('#navbar-mobile').children;
     for (let i = 0; i < divChildren.length; i++) {
         divChildren[i].onclick = toggleFunction;
     }
-}
 
-loadAndInjectComponents();
+}
 
 function updateGoogleReview() {
 
@@ -68,10 +92,7 @@ function updateGoogleReview() {
         })
 }
 
-updateGoogleReview()
-
 function toggleFunction() {
-    console.log('meow')
     var x = document.getElementById("navbar-mobile");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";

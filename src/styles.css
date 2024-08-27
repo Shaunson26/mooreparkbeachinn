@@ -1,3 +1,29 @@
+.initial-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.loaded-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      visibility: hidden;
+  }
+  to {
+      opacity: 1;
+      visibility: visible;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
 .my-flex-middle {
   height: 100%;
   display: flex;
@@ -40,4 +66,3 @@
 .w3-hover-opacity {
   cursor: pointer;
 }
-
