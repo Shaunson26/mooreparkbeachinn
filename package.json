@@ -6,9 +6,9 @@
   "license": "MIT",
   "source": "src/index.html",
   "scripts": {
-    "start": "rimraf dist && parcel",
-    "build": "rimraf dist && parcel build --public-url ./",
-    "clear-dist": "rimraf dist"
+    "start": "rimraf docs && parcel",
+    "build": "rimraf docs && parcel build --public-url ./ --dist-dir docs",
+    "clear-docs": "rimraf docs"
   },
   "devDependencies": {
     "parcel": "^2.12.0",
