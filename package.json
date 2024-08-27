@@ -6,11 +6,11 @@
   "license": "MIT",
   "source": "src/index.html",
   "scripts": {
-    "clear-docs": "rimraf docs",
-    "clear-dev-srv": "rimraf dev-srv",
-    "copy-site-docs": "copyfiles ./src/robots.txt ./docs/robots.txt && copyfiles ./src/sitemap.xml ./docs/sitemap.xml && copyfiles ./src/CNAME ./docs/CNAME",
-    "start": "yarn run clear-dev-srv && parcel --dist-dir dev-srv",
-    "build": "yarn run clear-docs && parcel build --public-url ./ --dist-dir docs && yarn run copy-site-docs"
+    "prestart": "rimraf dev-srv",
+    "start": "parcel --dist-dir dev-srv",
+    "prebuild": "rimraf docs",
+    "build": "parcel build --public-url ./ --dist-dir docs",
+    "postbuild": "copyfiles -u 1 src/robots.txt src/sitemap.xml src/CNAME docs"
   },
   "devDependencies": {
     "@parcel/transformer-inline-string": "^2.12.0",
