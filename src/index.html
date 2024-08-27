@@ -6,16 +6,15 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" media="print"  onload="this.media='all'; this.onload = null">
-  <link rel="stylesheet" href="styles-colours-fonts.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="styles-tripadvisor.css">
-  <script src="my.js"></script>
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="w3.js"></script>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" type="module"></script>
   <meta name="title" content="Moore Park Beach Inn - Bundaberg Region">
   <meta name="description"
     content="Moore Park Beach Inn is located 200m from Moore Park Beach, Bundaberg's best pet-friendly beach, only 15km north of Bundaberg.">
-  <meta name="keywords" content="Motel, Bundaberg, Moore Park Beach, Beach, Accomodation">
+  <meta name="keywords" content="Motel, Bundaberg, Moore Park Beach, Beach, Accommodation">
   <meta name="robots" content="index, follow">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
@@ -33,28 +32,18 @@
 
 </head>
 
-<body class="my-beach-cream-25" style="visibility: hidden;">
+<body class="my-beach-cream-25">
 
-  <div w3-include-html="./components/navbar.html"></div>
-  <div w3-include-html="./components/hero.html"></div>
-  <div w3-include-html="./components/welcome.html"></div>
-  <div w3-include-html="./components/our-inn.html"></div>
-  <div w3-include-html="./components/contact.html"></div>
-  <div w3-include-html="./components/footer.html"></div>
+  <div w3-include-html="navbar"></div>
+  <div w3-include-html="hero"></div>
+  <div w3-include-html="welcome"></div>
+  <div w3-include-html="our-inn"></div>
+  <div w3-include-html="contact"></div>
+  <div w3-include-html="footer"></div>
 
   <script async
     src="https://www.jscache.com/wejs?wtype=cdsratingsonlywide&amp;uniq=602&amp;locationId=3171922&amp;lang=en_AU&amp;border=true&amp;display_version=2"
     data-loadtrk onload="this.loadtrk=true"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <script>
-    w3.includeHTML(function () {
-      updateGoogleReview()
-      let body = document.getElementsByTagName('body')[0];
-      body.style.visibility = 'visible';
-    });
-  </script>
 
 </body>
 

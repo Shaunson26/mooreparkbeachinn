@@ -1,11 +1,17 @@
 <div class="w3-container w3-center w3-section">
-    <div id="book" w3-include-html="./components/book-button.html"></div>
+    <div id="book">
+        <a href="https://useross.com/booking.php?dialog=motel&motel_id=197"
+            class="w3-button my-beach-orange my-hover-beach-blue w3-xlarge w3-padding-large my-hover-border-beach-orange my-border-beach-orange"
+            aria-label="book room button">
+            BOOK DIRECT & SAVE
+        </a>
+    </div>
 
     <div style="display: flex;justify-content: center;align-items: center;">
         <div class="gloria-hallelujah-regular" style="text-transform: uppercase;">
             Check available<br>dates here
         </div>
-        <img src="./images/arrow-up.svg" height="75px" alt="arrow" />
+        <img src="../images/arrow-up.svg" height="75px" alt="arrow" />
     </div>
 </div>
 
@@ -22,7 +28,7 @@
         that has earned us stellar reviews on TripAdvisor and Google.
         It's our privilege to provide both comfort and affordability to our guests but the Moore Park Beach Inn
         experience goes far
-        beyond that. Stay with us and you'll enjoy:</p>  
+        beyond that. Stay with us and you'll enjoy:</p>
 
     <div class="w3-row-padding enjoy-text">
         <div class="w3-col w3-padding-16 l4">
@@ -34,7 +40,8 @@
             <li>A proudly pet-friendly environment where your furry family members are lovingly welcomed</li>
         </div>
         <div class="w3-col w3-padding-16 l4">
-            <li>A peaceful environment at a boutique motel with only seven accomodation rooms that's easy to access from the heart of
+            <li>A peaceful environment at a boutique motel with only seven accomodation rooms that's easy to access from
+                the heart of
                 Bundaberg</li>
         </div>
         <div class="w3-col w3-padding-16 l4">
@@ -61,7 +68,7 @@
                 are
                 welcome at Moore Park Beach Inn. Just let us know when you book your stay so we can prepare in advance
                 and
-                please <a href="./documents/MPBI-Pet-Policy.pdf" target="_blank" class="my-hover-bold">see our pet
+                please <a href="../documents/MPBI-Pet-Policy.pdf" target="_blank" class="my-hover-bold">see our pet
                     policy</a>.
             </p>
         </div>
@@ -83,3 +90,56 @@
     </div>
 
 </div>
+
+<style>
+    #inn-hero {
+        width: 100%;
+        height: 150px;
+        background-image: url('../images/motel-hero.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+        background-position-x: 50%;
+    }
+
+    /* Medium size screen */
+    @media only screen and (min-device-width: 992px) {
+
+        #inn-hero {
+            height: 250px;
+        }
+
+    }
+
+    .enjoy-text {
+        text-align: left;
+    }
+
+    .enjoy-text>div>li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Images */
+    .rwimg-1 {
+        background-image: url('../images/dogs.webp');
+    }
+
+    .rwimg-2 {
+        background-image: url('../images/sunset.webp');
+    }
+
+    .rwimg-3 {
+        background-image: url('../images/rooms.webp');
+    }
+
+    .rwimg-1,
+    .rwimg-2,
+    .rwimg-3 {
+        min-height: 250px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>

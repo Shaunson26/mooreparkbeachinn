@@ -1,2 +1,3 @@
-images/source
-dev/
+node_modules
+.parcel-cache
+dev
