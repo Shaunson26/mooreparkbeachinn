@@ -74,7 +74,7 @@ function addNavbarToggleFunction() {
 
 function updateGoogleReview() {
 
-    fetch("https://shaunnielsen.com/mpbi/review.json")
+    fetch("https://shaunnielsen.com.au/mpbi/review.json")
         .then((response) => response.json())
         .then((data) => {
 
