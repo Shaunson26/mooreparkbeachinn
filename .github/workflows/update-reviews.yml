@@ -1,4 +1,7 @@
-﻿on: 
+﻿permissions:
+  contents: write
+
+on: 
   schedule:
     - cron: '0 0 * * 0' # weekly on Sunday UTC
   workflow_dispatch: {}
