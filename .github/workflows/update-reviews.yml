@@ -23,7 +23,7 @@ jobs:
           PLACES_API_KEY: ${{ secrets.PLACES_API_KEY }}
           PLACE_ID: ${{ secrets.PLACE_ID }}
         run: |
-          node dev/get-google-place-review.js
+          node src/get-google-place-review.js
 
       - name: Commit updated review file
         run: |
