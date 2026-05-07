@@ -1,0 +1,38 @@
+﻿on: 
+  schedule:
+    - cron: '0 0 * * 0' # weekly on Sunday UTC
+  workflow_dispatch: {}
+
+name: Update Google Places Review
+
+jobs:
+  update-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+
+      - name: Run review update script
+        env:
+          PLACES_API_KEY: ${{ secrets.PLACES_API_KEY }}
+          PLACE_ID: ${{ secrets.PLACE_ID }}
+        run: |
+          node dev/get-google-place-review.js
+
+      - name: Commit updated review file
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/review.json
+          if git diff --cached --quiet; then
+            echo 'No changes to commit.'
+          else
+            git commit -m 'Weekly update: refresh Google Places review data'
+            git push
+          fi
